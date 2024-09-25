@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Container } from "../GridContainer"
+import { Container } from "../../GlobalComponents/GridContainer"
 import { TagAboutTheDoctor } from "./TagAboutTheDoctor"
 import { TextTag } from "../TextTag"
 

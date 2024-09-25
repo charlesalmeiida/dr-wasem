@@ -1,9 +1,10 @@
-import { About } from "@/components/About/About"
-import { BlogSection } from "@/components/Blog/BlogSection/BlogSection"
-import { BulletsBenefits } from "@/components/BulletsBenefits/BulletsBenefits"
-import { Footer } from "@/components/Footer/Footer"
-import { Header } from "@/components/Header/Header"
-import { Hero } from "@/components/Hero/Hero"
+import { Footer } from "@/components/GlobalComponents/Footer/Footer"
+import { Header } from "@/components/GlobalComponents/Header/Header"
+import { About } from "@/components/HomepageComponents/About/About"
+import { BlogSection } from "@/components/HomepageComponents/BlogSection/BlogSection"
+import { BulletsBenefits } from "@/components/HomepageComponents/BulletsBenefits/BulletsBenefits"
+import { Hero } from "@/components/HomepageComponents/Hero/Hero"
+import ImageGallery from "@/components/HomepageComponents/ImageGallery/ImageGallery"
 
 export function Homepage() {
   return (
@@ -12,6 +13,7 @@ export function Homepage() {
       <Hero />
       <BulletsBenefits />
       <About />
+      <ImageGallery />
       <BlogSection />
       <Footer />
     </>

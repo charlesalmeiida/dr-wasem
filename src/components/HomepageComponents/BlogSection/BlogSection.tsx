@@ -1,7 +1,7 @@
-import { Container } from "@/components/GridContainer"
-import { TextTag } from "@/components/TextTag"
-import { CardPostDefault } from "../CardsPost/CardPostDefault"
-import { CardPostSM } from "../CardsPost/CardPostSM"
+import { Container } from "@/components/GlobalComponents/GridContainer"
+import { TextTag } from "@/components/HomepageComponents/TextTag"
+import { CardPostDefault } from "../../BlogComponents/CardsPost/CardPostDefault"
+import { CardPostSM } from "../../BlogComponents/CardsPost/CardPostSM"
 
 export function BlogSection() {
   return (

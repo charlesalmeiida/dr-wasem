@@ -20,7 +20,9 @@ export function BenefitBullet({
         <span className="text-gray-950 font-nunito text-lg font-bold leading-5">
           {titleBenefit}
         </span>
-        <p className="text-gray-900 font-inter text-base opacity-80">{textBenefit}</p>
+        <p className="text-gray-900 font-inter text-base opacity-80">
+          {textBenefit}
+        </p>
       </div>
     </div>
   )
