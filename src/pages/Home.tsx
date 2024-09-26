@@ -4,7 +4,7 @@ import { About } from "@/components/HomepageComponents/About/About"
 import { BlogSection } from "@/components/HomepageComponents/BlogSection/BlogSection"
 import { BulletsBenefits } from "@/components/HomepageComponents/BulletsBenefits/BulletsBenefits"
 import { Hero } from "@/components/HomepageComponents/Hero/Hero"
-import ImageGallery from "@/components/HomepageComponents/ImageGallery/ImageGallery"
+import { ImageGallery } from "@/components/HomepageComponents/ImageGallery/ImageGallery"
 
 export function Homepage() {
   return (

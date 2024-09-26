@@ -2,26 +2,16 @@
 
 import { useEffect, useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import { Swiper as SwiperType } from "swiper"
 import { Navigation, FreeMode, Thumbs } from "swiper/modules"
 import "swiper/swiper-bundle.css"
 import Image from "next/image"
 import { Container } from "@/components/GlobalComponents/GridContainer"
+import { images } from "@/components/HomepageComponents/ImageGallery/images"
 
-const images = [
-  {
-    src: "/img/image-doctor-01.png",
-  },
-  {
-    src: "/img/image-doctor-02.png",
-  },
-  {
-    src: "/img/image-doctor-03.png",
-  },
-]
-
-const ImageGallery = () => {
+export const ImageGallery = () => {
   const [isClient, setIsClient] = useState(false)
-  const [thumbsSwiper, setThumbsSwiper] = useState(null)
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
 
   useEffect(() => {
     setIsClient(true)
@@ -34,7 +24,10 @@ const ImageGallery = () => {
   return (
     <section className="pb-28">
       <Container>
-        <div className="">
+        <h2 className="text-gray-950 font-nunito font-semibold mx-auto block w-fit mb-20">
+          Galeria de fotos
+        </h2>
+        <div className="space-y-8">
           <Swiper
             navigation={false}
             spaceBetween={10}
@@ -46,6 +39,7 @@ const ImageGallery = () => {
             {images.map((image, index) => (
               <SwiperSlide key={index}>
                 <Image
+                  className="max-w-[500px] mx-auto"
                   src={image.src}
                   alt="Imagem do doutor"
                   width={697}
@@ -54,30 +48,31 @@ const ImageGallery = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <Swiper
-            onSwiper={setThumbsSwiper}
-            spaceBetween={10}
-            slidesPerView={4}
-            freeMode={true}
-            watchSlidesProgress={true}
-            modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper cursor-pointer"
-          >
-            {images.map((image, index) => (
-              <SwiperSlide key={index}>
-                <Image
-                  src={image.src}
-                  alt="Imagem do doutor"
-                  width={697}
-                  height={421}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="max-w-[500px] mx-auto">
+            <Swiper
+              onSwiper={setThumbsSwiper}
+              spaceBetween={32}
+              slidesPerView={3}
+              freeMode={true}
+              watchSlidesProgress={true}
+              modules={[FreeMode, Navigation, Thumbs]}
+              className="mySwiper cursor-pointer"
+            >
+              {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <Image
+                    className="max-w-[150px]"
+                    src={image.src}
+                    alt="Imagem do doutor"
+                    width={697}
+                    height={421}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </Container>
     </section>
   )
 }
-
-export default ImageGallery
