@@ -28,26 +28,28 @@ export const ImageGallery = () => {
           Galeria de fotos
         </h2>
         <div className="space-y-8">
-          <Swiper
-            navigation={false}
-            spaceBetween={10}
-            thumbs={{ swiper: thumbsSwiper }}
-            pagination={{ type: "fraction" }}
-            modules={[Navigation, Thumbs, FreeMode]}
-            className="mySwiper2"
-          >
-            {images.map((image, index) => (
-              <SwiperSlide key={index}>
-                <Image
-                  className="max-w-[500px] mx-auto"
-                  src={image.src}
-                  alt="Imagem do doutor"
-                  width={697}
-                  height={421}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div>
+            <Swiper
+              navigation={false}
+              spaceBetween={10}
+              thumbs={{ swiper: thumbsSwiper }}
+              pagination={{ type: "fraction" }}
+              modules={[Navigation, Thumbs, FreeMode]}
+              className="mySwiper2"
+            >
+              {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <Image
+                    className="max-w-[500px] mx-auto"
+                    src={image.src}
+                    alt="Imagem do doutor"
+                    width={697}
+                    height={421}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
           <div className="max-w-[500px] mx-auto">
             <Swiper
               onSwiper={setThumbsSwiper}

@@ -5,6 +5,7 @@ import { BlogSection } from "@/components/HomepageComponents/BlogSection/BlogSec
 import { BulletsBenefits } from "@/components/HomepageComponents/BulletsBenefits/BulletsBenefits"
 import { Hero } from "@/components/HomepageComponents/Hero/Hero"
 import { ImageGallery } from "@/components/HomepageComponents/ImageGallery/ImageGallery"
+import { Location } from "@/components/HomepageComponents/Location/Location"
 
 export function Homepage() {
   return (
@@ -15,6 +16,7 @@ export function Homepage() {
       <About />
       <ImageGallery />
       <BlogSection />
+      <Location />
       <Footer />
     </>
   )
