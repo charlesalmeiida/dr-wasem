@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 import { tv } from "tailwind-variants"
 
 interface ButtonProps {
-  color: "primary" | "secondary" | "blue"
+  color: "primary" | "secondary" | "blue" | "orange"
   size: "sm" | "base"
   url: string
   children: ReactNode
@@ -15,6 +15,7 @@ const button = tv({
     color: {
       primary: "bg-orange hover:bg-orangeLight text-gray-500",
       blue: "bg-blue hover:bg-orangeLight text-gray-500",
+      orange: "bg-orange hover:bg-blue text-gray-500",
       secondary:
         "text-gray-950 bg-transparent border-[1px] hover:text-gray-500 hover:bg-blue border-blue ",
     },

@@ -5,7 +5,7 @@ import { CardPostSM } from "../../BlogComponents/CardsPost/CardPostSM"
 
 export function BlogSection() {
   return (
-    <section className="pb-28">
+    <section className="py-28">
       <Container>
         <div className="flex items-end justify-between max-w-4xl">
           <div className="space-y-6">
