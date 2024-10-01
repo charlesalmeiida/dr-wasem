@@ -3,7 +3,7 @@ import { Footer } from "@/components/GlobalComponents/Footer/Footer"
 import { Container } from "@/components/GlobalComponents/GridContainer"
 import { Header } from "@/components/GlobalComponents/Header/Header"
 
-export function Contact() {
+export default function Contact() {
   return (
     <>
       <Header />

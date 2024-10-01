@@ -9,7 +9,7 @@ import { ImageGallery } from "@/components/HomepageComponents/ImageGallery/Image
 import { Location } from "@/components/HomepageComponents/Location/Location"
 import { Reviews } from "@/components/HomepageComponents/ReviewsSection/Reviews"
 
-export function Homepage() {
+export default function Homepage() {
   return (
     <>
       <Header />
