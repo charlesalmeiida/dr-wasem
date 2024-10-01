@@ -1,4 +1,4 @@
-import { Container } from "../../GlobalComponents/GridContainer"
+import { Container } from "../../Global/GridContainer"
 import { BenefitBullet } from "./Benefit"
 
 export function BulletsBenefits() {

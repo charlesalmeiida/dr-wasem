@@ -1,6 +1,6 @@
-import { Container } from "@/components/GlobalComponents/GridContainer"
+import { Container } from "@/components/Global/GridContainer"
 import { TextTag } from "../TextTag"
-import { Button } from "@/components/GlobalComponents/Button"
+import { Button } from "@/components/Global/Button"
 import { Maps } from "./Maps"
 
 export function Location() {

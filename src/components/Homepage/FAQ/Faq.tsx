@@ -1,6 +1,6 @@
 "use client"
 
-import { Container } from "@/components/GlobalComponents/GridContainer"
+import { Container } from "@/components/Global/GridContainer"
 import { TextTag } from "../TextTag"
 import Image from "next/image"
 import { ItemFaq } from "./ItemFaq"

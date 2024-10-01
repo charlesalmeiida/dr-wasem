@@ -1,4 +1,4 @@
-import { Button } from "../GlobalComponents/Button"
+import { Button } from "../Global/Button"
 import { Input } from "./Input"
 import { TextArea } from "./TextArea"
 

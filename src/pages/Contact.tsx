@@ -1,7 +1,7 @@
-import { FormSection } from "@/components/ContactComponents/FormSection"
-import { Footer } from "@/components/GlobalComponents/Footer/Footer"
-import { Container } from "@/components/GlobalComponents/GridContainer"
-import { Header } from "@/components/GlobalComponents/Header/Header"
+import { FormSection } from "@/components/Contact/FormSection"
+import { Footer } from "@/components/Global/Footer/Footer"
+import { Container } from "@/components/Global/GridContainer"
+import { Header } from "@/components/Global/Header/Header"
 
 export default function Contact() {
   return (

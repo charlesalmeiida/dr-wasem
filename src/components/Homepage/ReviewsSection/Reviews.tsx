@@ -1,13 +1,14 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Container } from "@/components/GlobalComponents/GridContainer"
+import { Container } from "@/components/Global/GridContainer"
 import { TextTag } from "../TextTag"
 import { TestimonialCard } from "./TestimonialCard"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
 import { Pagination } from "swiper/modules"
+import { arrayReviews } from "./ArrayReviews"
 
 export function Reviews() {
   const [isClient, setIsClient] = useState(false)
@@ -31,7 +32,7 @@ export function Reviews() {
             </h2>
           </div>
           <div className="custom-pagination flex justify-end"></div>
-        </div>
+        </div>  
         <div className="mt-14">
           <Swiper
             slidesPerView={4}
@@ -43,21 +44,15 @@ export function Reviews() {
             modules={[Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <TestimonialCard />
-            </SwiperSlide>
+            {arrayReviews.map((item, index) => (
+              <SwiperSlide key={index}>
+                <TestimonialCard
+                  name={item.name}
+                  testimonial={item.testimonial}
+                  image={item.image}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
           <style jsx global>{`
             .custom-pagination .swiper-pagination-bullet {

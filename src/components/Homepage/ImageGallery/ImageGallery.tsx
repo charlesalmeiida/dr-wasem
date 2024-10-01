@@ -6,8 +6,8 @@ import { Swiper as SwiperType } from "swiper"
 import { Navigation, FreeMode, Thumbs } from "swiper/modules"
 import "swiper/swiper-bundle.css"
 import Image from "next/image"
-import { Container } from "@/components/GlobalComponents/GridContainer"
-import { images } from "@/components/HomepageComponents/ImageGallery/images"
+import { Container } from "@/components/Global/GridContainer"
+import { images } from "@/components/Homepage/ImageGallery/images"
 
 export const ImageGallery = () => {
   const [isClient, setIsClient] = useState(false)

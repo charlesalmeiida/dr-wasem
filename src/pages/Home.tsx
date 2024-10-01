@@ -1,13 +1,13 @@
-import { Footer } from "@/components/GlobalComponents/Footer/Footer"
-import { Header } from "@/components/GlobalComponents/Header/Header"
-import { About } from "@/components/HomepageComponents/About/About"
-import { BlogSection } from "@/components/HomepageComponents/BlogSection/BlogSection"
-import { BulletsBenefits } from "@/components/HomepageComponents/BulletsBenefits/BulletsBenefits"
-import { Faq } from "@/components/HomepageComponents/FAQ/Faq"
-import { Hero } from "@/components/HomepageComponents/Hero/Hero"
-import { ImageGallery } from "@/components/HomepageComponents/ImageGallery/ImageGallery"
-import { Location } from "@/components/HomepageComponents/Location/Location"
-import { Reviews } from "@/components/HomepageComponents/ReviewsSection/Reviews"
+import { Footer } from "@/components/Global/Footer/Footer"
+import { Header } from "@/components/Global/Header/Header"
+import { About } from "@/components/Homepage/About/About"
+import { BlogSection } from "@/components/Homepage/BlogSection/BlogSection"
+import { BulletsBenefits } from "@/components/Homepage/BulletsBenefits/BulletsBenefits"
+import { Faq } from "@/components/Homepage/FAQ/Faq"
+import { Hero } from "@/components/Homepage/Hero/Hero"
+import { ImageGallery } from "@/components/Homepage/ImageGallery/ImageGallery"
+import { Location } from "@/components/Homepage/Location/Location"
+import { Reviews } from "@/components/Homepage/ReviewsSection/Reviews"
 
 export default function Homepage() {
   return (

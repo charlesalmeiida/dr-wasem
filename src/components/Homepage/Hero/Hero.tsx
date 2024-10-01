@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Button } from "../../GlobalComponents/Button"
-import { Container } from "../../GlobalComponents/GridContainer"
+import { Button } from "../../Global/Button"
+import { Container } from "../../Global/GridContainer"
 import { TextTag } from "../TextTag"
 
 export function Hero() {
