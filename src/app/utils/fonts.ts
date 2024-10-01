@@ -8,7 +8,6 @@ const inter_font = Inter({
 
 const nunito_font = Nunito_Sans({
   weight: ["400", "500", "600", "700"],
-  style: "normal",
   display: "swap",
   subsets: ["latin"],
   variable: "--font-nunito",

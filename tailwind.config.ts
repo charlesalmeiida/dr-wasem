@@ -11,8 +11,8 @@ const config: Config = {
       lg: "10px",
     },
     fontFamily: {
-      nunito: ["var(--font-nunito)"],
-      inter: ["var(--font-inter)"],
+      nunito: ["var(--font-nunito)", "sans-serif"],
+      inter: ["var(--font-inter)", "sans-serif"],
     },
     backgroundImage: {
       img: "url('/img/bg-hero.png')",
