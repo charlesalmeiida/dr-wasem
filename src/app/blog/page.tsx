@@ -1,3 +1,5 @@
+import BlogPage from "@/pages/Blog"
+
 export default function Blog() {
-  return <h1>Blog</h1>
+  return <BlogPage />
 }

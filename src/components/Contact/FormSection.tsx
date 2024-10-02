@@ -26,7 +26,7 @@ export function FormSection() {
             E-mail
           </Input>
           <div className="mt-9 flex justify-end">
-            <Button color="orange" size="base" url="/contato">
+            <Button color="primary" size="base" url="/contato">
               Enviar
             </Button>
           </div>

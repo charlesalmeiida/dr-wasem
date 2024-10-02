@@ -50,7 +50,7 @@ export function Reviews() {
                   name={item.name}
                   testimonial={item.testimonial}
                   image={item.image}
-                />
+                />  
               </SwiperSlide>
             ))}
           </Swiper>

@@ -2,6 +2,7 @@ import { Container } from "@/components/Global/GridContainer"
 import { TextTag } from "@/components/Homepage/TextTag"
 import { CardPostDefault } from "../../Blog/CardsPost/CardPostDefault"
 import { CardPostSM } from "../../Blog/CardsPost/CardPostSM"
+import { Button } from "@/components/Global/Button"
 
 export function BlogSection() {
   return (
@@ -27,6 +28,11 @@ export function BlogSection() {
             <CardPostSM />
             <CardPostSM />
           </div>
+        </div>
+        <div className="mx-auto mt-20 block w-fit">
+          <Button url="/blog" color="secondary" size="sm">
+            Mais publicações
+          </Button>
         </div>
       </Container>
     </section>

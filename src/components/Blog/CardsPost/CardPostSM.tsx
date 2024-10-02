@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { TagCalendar } from "../TagCalendar"
 
 export function CardPostSM() {
   return (
@@ -12,7 +13,7 @@ export function CardPostSM() {
           height={124}
           alt="Imagem do post do blog"
         />
-        <div className="space-y-4">
+        <div className="space-y-4 mb-7">
           <span className="font-inter text-sm font-medium text-gray-900">
             ESCLEROSE MÚLTIPLA
           </span>
@@ -22,17 +23,7 @@ export function CardPostSM() {
           </h6>
         </div>
       </div>
-      <div className="flex items-center gap-2 mt-6">
-        <Image
-          src="/svg/icon-calendar.svg"
-          width={16}
-          height={18}
-          alt="Ícone de calendário"
-        />
-        <span className="font-inter text-base font-medium text-gray-900 opacity-80">
-          12 fevereiro, 2024
-        </span>
-      </div>
+      <TagCalendar />
     </Link>
   )
 }

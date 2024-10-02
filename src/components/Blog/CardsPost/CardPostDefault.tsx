@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { TagCalendar } from "../TagCalendar"
 
 export function CardPostDefault() {
   return (
@@ -17,17 +18,7 @@ export function CardPostDefault() {
         <span className="font-inter text-base font-medium text-gray-900">
           ESCLEROSE MÚLTIPLA
         </span>
-        <div className="flex gap-2">
-          <Image
-            src="/svg/icon-calendar.svg"
-            width={16}
-            height={18}
-            alt="Ícone de calendário"
-          />
-          <span className="font-inter text-base font-medium text-gray-900 opacity-80">
-            12 fevereiro, 2024
-          </span>
-        </div>
+        <TagCalendar />
       </div>
       <h3 className="font-nunito text-gray-950 font-bold leading-10 max-w-[697px] mt-7">
         Medição do soro do neurofilamento e ressonância magnética na esclerose
