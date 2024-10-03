@@ -17,7 +17,7 @@ export function CardPostSM() {
           <span className="font-inter text-sm font-medium text-gray-900">
             ESCLEROSE MÚLTIPLA
           </span>
-          <h6 className="font-nunito text-gray-950 font-bold max-w-[265px] line-clamp-3">
+          <h6 className="font-nunito text-gray-950 font-bold max-w-80 lg:max-w-[265px] line-clamp-3">
             Medição do soro do neurofilamento e ressonância magnética na
             esclerose múltipla
           </h6>

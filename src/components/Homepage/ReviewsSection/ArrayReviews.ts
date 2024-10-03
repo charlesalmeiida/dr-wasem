@@ -11,4 +11,23 @@ export const arrayReviews = [
     testimonial:
       "O melhor médico que já consultei em minha vida. Profissional de alto nível.",
   },
+  {
+    name: "Maria Aparecida",
+    image: "/img/icon-testimonial-02.png",
+    testimonial:
+      "O melhor médico que já consultei em minha vida. Profissional de alto nível.",
+  },
+  {
+    name: "Maria Aparecida",
+    image: "/img/icon-testimonial-02.png",
+    testimonial:
+      "O melhor médico que já consultei em minha vida. Profissional de alto nível.",
+  },
+  {
+    name: "Maria Aparecida",
+    image: "/img/icon-testimonial-02.png",
+    testimonial:
+      "O melhor médico que já consultei em minha vida. Profissional de alto nível.",
+  },
+  
 ]

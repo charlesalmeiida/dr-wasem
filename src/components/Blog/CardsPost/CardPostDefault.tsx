@@ -4,7 +4,7 @@ import { TagCalendar } from "../TagCalendar"
 
 export function CardPostDefault() {
   return (
-    <Link href={"/blog/blog-post"} className="w-fit block">
+    <Link href={"/blog/blog-post"} className="w-fit block mx-auto lg:mx-0">
       <div className="overflow-hidden rounded-lg">
         <Image
           className="hover:scale-105 transition-all w-full h-full object-cover"

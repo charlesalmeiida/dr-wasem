@@ -24,15 +24,15 @@ export function Reviews() {
   return (
     <section className="py-14 bg-blue">
       <Container>
-        <div className="flex justify-between items-center">
-          <div className="space-y-6 shrink-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="space-y-6 shrink-0 text-center lg:text-left mb-10">
             <TextTag className="text-gray-500">REVIEW</TextTag>
             <h2 className="font-nunito font-semibold text-gray-500">
               O que dizem os pacientes
             </h2>
           </div>
-          <div className="custom-pagination flex justify-end"></div>
-        </div>  
+          <div className="custom-pagination justify-center flex lg:justify-end"></div>
+        </div>
         <div className="mt-14">
           <Swiper
             slidesPerView={4}
@@ -43,6 +43,21 @@ export function Reviews() {
             }}
             modules={[Pagination]}
             className="mySwiper"
+            breakpoints={{
+              320: {
+                slidesPerView: 1.4,
+                spaceBetween: 16,
+              },
+              640: {
+                slidesPerView: 2.4,
+              },
+              1024: {
+                slidesPerView: 3.1,
+              },
+              1440: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {arrayReviews.map((item, index) => (
               <SwiperSlide key={index}>
@@ -50,7 +65,7 @@ export function Reviews() {
                   name={item.name}
                   testimonial={item.testimonial}
                   image={item.image}
-                />  
+                />
               </SwiperSlide>
             ))}
           </Swiper>

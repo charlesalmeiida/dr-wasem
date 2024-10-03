@@ -5,9 +5,9 @@ import { ItemNav } from "../Header/ItemNav"
 
 export function Footer() {
   return (
-    <footer className="py-20 bg-blue">
+    <footer className="pt-14 pb-4 lg:pt-28 lg:pb-0 lg:py-20 bg-blue">
       <Container>
-        <div className="flex justify-between items-end">
+        <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 justify-between items-center lg:items-center">
           <div>
             <Image
               src="/svg/logo-footer.svg"
@@ -40,8 +40,8 @@ export function Footer() {
             />
           </div>
         </div>
-        <div className="flex justify-between items-center mt-24">
-          <span className="block font-inter text-sm font-sm text-gray-500 opacity-80">
+        <div className="flex justify-between flex-col-reverse lg:flex-row  items-center mt-24">
+          <span className="block font-inter text-sm font-sm mt-10 lg:mt-0 text-gray-500 opacity-80">
             © Copyright 2024. Todos os direitos reservados
           </span>
           <nav>

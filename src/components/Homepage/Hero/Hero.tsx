@@ -9,7 +9,7 @@ export function Hero() {
       <section className="bg-img h-full pt-14 lg:pt-28 bg-cover">
         <Container>
           <div className="flex flex-col lg:flex-row gap-14 justify-between items-start">
-            <div className="mt-4 text-center mx-auto lg:text-left">
+            <div className="mt-4 text-center mx-auto lg:text-left lg:mx-0">
               <div className="space-y-3">
                 <TextTag className="text-gray-500">DR. MATHEUS WASEM</TextTag>
                 <h1 className="text-gray-500 font-nunito font-bold">
@@ -30,7 +30,7 @@ export function Hero() {
               </div>
             </div>
             <Image
-              className="mx-auto max-w-[75%]"
+              className="mx-auto lg:mx-0 max-w-[75%]"
               src="/img/img-hero.png"
               width={407}
               height={512}

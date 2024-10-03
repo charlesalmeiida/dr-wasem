@@ -16,12 +16,12 @@ export default function Homepage() {
       <Hero />
       <BulletsBenefits />
       <About />
-      {/* <ImageGallery /> */}
+      <ImageGallery />
       <Faq />
-      {/* <Reviews />
+      <Reviews />
       <BlogSection />
       <Location />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

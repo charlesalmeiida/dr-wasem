@@ -17,7 +17,7 @@ export function Faq() {
   return (
     <section className="pb-28">
       <Container>
-        <div className="text-center pb-28">
+        <div className="text-center pb-10 lg:pb-28">
           <TextTag className="text-orange">FAQ</TextTag>
           <h2 className="font-nunito font-semibold text-gray-950">
             Perguntas e respostas
