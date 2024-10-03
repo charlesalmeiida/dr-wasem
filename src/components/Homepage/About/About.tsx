@@ -5,24 +5,27 @@ import { TextTag } from "../TextTag"
 
 export function About() {
   return (
-    <section className="py-32">
+    <section className="py-14 lg:py-32">
       <Container>
-        <div className="flex items-start justify-around">
-          <div className="flex flex-col items-center">
+        <div className="flex flex-col lg:flex-row items-start justify-around">
+          <div className="flex flex-col mx-auto lg:mx-0 items-center">
             <Image
+              className="max-w-[75%] lg:max-w-[100%]"
               src="/img/image-about.png"
               width={384}
               height={449}
               alt="Foto do Dr. Matheus Wasem na seção de Sobre"
             />
-            <div className="flex gap-14 mt-6">
+            <div className="flex gap-10 lg:gap-14 mt-6">
               <TagAboutTheDoctor about="CRM/PR 37.001" />
               <TagAboutTheDoctor about="RQE 26.459" />
             </div>
           </div>
-          <div>
-            <TextTag className="text-orange">SOBRE</TextTag>
-            <div className="space-y-6 mt-8">
+          <div className="mt-10 lg:mt-0 mx-auto lg:mx-0">
+            <TextTag className="text-orange text-center lg:text-left block">
+              SOBRE
+            </TextTag>
+            <div className="space-y-4 lg:space-y-6 mt-8">
               <h2 className="text-gray-950 font-nunito font-semibold">
                 Dr. Matheus Wasem
               </h2>

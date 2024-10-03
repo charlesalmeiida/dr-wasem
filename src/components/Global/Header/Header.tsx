@@ -3,6 +3,7 @@ import { ItemNav } from "./ItemNav"
 import { Button } from "../Button"
 import Link from "next/link"
 import { Container } from "../GridContainer"
+import { MenuMobile } from "./MenuMobile"
 
 export function Header() {
   return (
@@ -19,7 +20,7 @@ export function Header() {
               />
             </Link>
             <nav>
-              <ul className="flex gap-14">
+              <ul className="hidden lg:flex gap-14">
                 <ItemNav className="hover:text-gray-800 text-gray-950">
                   Sobre
                 </ItemNav>
@@ -32,9 +33,12 @@ export function Header() {
               </ul>
             </nav>
           </div>
-          <Button url="/contato" color="secondary" size="sm">
-            Entre em contato
-          </Button>
+          <MenuMobile />
+          <div className="hidden md:block">
+            <Button url="/contato" color="secondary" size="sm">
+              Entre em contato
+            </Button>
+          </div>
         </div>
       </Container>
     </header>

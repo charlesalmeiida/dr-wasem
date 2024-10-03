@@ -24,7 +24,7 @@ export const ImageGallery = () => {
   return (
     <section className="pb-28">
       <Container>
-        <h2 className="text-gray-950 font-nunito font-semibold mx-auto block w-fit mb-20">
+        <h2 className="text-gray-950 font-nunito font-semibold mx-auto block w-fit mb-10">
           Galeria de fotos
         </h2>
         <div className="space-y-8">

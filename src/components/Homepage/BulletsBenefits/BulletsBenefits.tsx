@@ -1,31 +1,20 @@
 import { Container } from "../../Global/GridContainer"
 import { BenefitBullet } from "./Benefit"
+import { BulletsInfo } from "./ArrayBullets"
 
 export function BulletsBenefits() {
   return (
-    <section className="py-20 bg-gray-600">
+    <section className="py-14 lg:py-20 bg-gray-600">
       <Container>
-        <div className="flex justify-between items-start">
-          <BenefitBullet
-            icon="/svg/icon-help.svg"
-            titleBenefit="Médico acessível"
-            textBenefit="Todos meus pacientes tem contato total comigo."
-          />
-          <BenefitBullet
-            icon="/svg/icon-estetocopio.svg"
-            titleBenefit="Individualidade"
-            textBenefit="Cada paciente é tratado de maneira única e tem sua história valorizada."
-          />
-          <BenefitBullet
-            icon="/svg/icon-global-health.svg"
-            titleBenefit="Decisão compartilhada"
-            textBenefit="Os pacientes sempre serão protagonistas do próprio tratamento, me ajudando a tomar as decisões de seus medicamentos e exames."
-          />
-          <BenefitBullet
-            icon="/svg/icon-hearth.svg"
-            titleBenefit="Especialidade"
-            textBenefit="Conhecimento técnico profundo em Esclerose Múltipla."
-          />
+        <div className="flex flex-wrap justify-center gap-10 lg:gap-0 lg:justify-between items-start">
+          {BulletsInfo.map((item, index) => (
+            <BenefitBullet
+              key={index}
+              icon={item.icon}
+              titleBenefit={item.titleBenefit}
+              textBenefit={item.textBenefit}
+            />
+          ))}
         </div>
       </Container>
     </section>

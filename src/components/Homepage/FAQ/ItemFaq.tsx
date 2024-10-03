@@ -19,9 +19,9 @@ export function ItemFaq({
     <>
       <button
         onClick={toggleFaq}
-        className="flex items-center last:rounded-br-lg justify-between border-[0.5px] w-[650px] last:border-b-[0.5px] border-gray-900 border-opacity-40 p-10"
+        className="flex items-center last:rounded-br-lg justify-between border-[0.5px] w-full md:max-w-[685px] last:border-b-[0.5px] border-gray-900 border-opacity-40 p-10"
       >
-        <span className="block font-nunito text-lg font-semibold text-gray-950 max-w-[424px] text-left">
+        <span className="block font-nunito text-base lg:text-lg font-semibold max-w-[85%] text-gray-950  text-left">
           {question}
         </span>
         <Image
@@ -37,7 +37,7 @@ export function ItemFaq({
 
       <div
         className={classNames(
-          "overflow-hidden transition-opacity duration-500 ease-in-out",
+          "overflow-hidden transition-opacity  duration-500 ease-in-out",
           {
             "opacity-100": isActive,
             "opacity-0 pointer-events-none": !isActive,

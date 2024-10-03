@@ -9,10 +9,16 @@
 
 h1 {
   font-size: 56px;
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
 }
 
 h2 {
   font-size: 40px;
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 }
 
 h3 {

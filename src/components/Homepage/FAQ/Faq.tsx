@@ -23,8 +23,8 @@ export function Faq() {
             Perguntas e respostas
           </h2>
         </div>
-        <div className="flex items-center">
-          <div>
+        <div className="flex items-center justify-center">
+          <div className="hidden lg:block">
             <Image
               src="/img/image-faq.png"
               width={592}
@@ -41,7 +41,7 @@ export function Faq() {
                 isActive={openFaqIndex === index}
               >
                 {openFaqIndex === index && (
-                  <p className="border-gray-900 border-opacity-40 border-t-gray-300 border-[0.5px] p-10 max-w-[650px]">
+                  <p className="border-gray-900 border-opacity-40 max-w-[685px] border-t-gray-300 border-[0.5px] p-10 ">
                     {item.answer}
                   </p>
                 )}
