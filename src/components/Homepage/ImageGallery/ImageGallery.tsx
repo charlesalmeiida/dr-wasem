@@ -40,7 +40,7 @@ export const ImageGallery = () => {
               {images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    className="max-w-[500px] mx-auto"
+                    className="max-w-[70%] lg:max-w-[500px] mx-auto"
                     src={image.src}
                     alt="Imagem do doutor"
                     width={697}
@@ -53,7 +53,7 @@ export const ImageGallery = () => {
           <div className="max-w-[500px] mx-auto">
             <Swiper
               onSwiper={setThumbsSwiper}
-              spaceBetween={32}
+              spaceBetween={8}
               slidesPerView={3}
               freeMode={true}
               watchSlidesProgress={true}
@@ -63,7 +63,7 @@ export const ImageGallery = () => {
               {images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    className="max-w-[150px]"
+                    className="lg:max-w-[150px] max-w-[100px]"
                     src={image.src}
                     alt="Imagem do doutor"
                     width={697}

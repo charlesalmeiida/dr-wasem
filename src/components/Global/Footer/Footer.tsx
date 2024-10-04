@@ -5,7 +5,7 @@ import { ItemNav } from "../Header/ItemNav"
 
 export function Footer() {
   return (
-    <footer className="pt-14 pb-4 lg:pt-28 lg:pb-0 lg:py-20 bg-blue">
+    <footer className="pt-14 pb-4 lg:pt-28 lg:pb-20 lg:py-20 bg-blue">
       <Container>
         <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 justify-between items-center lg:items-center">
           <div>
