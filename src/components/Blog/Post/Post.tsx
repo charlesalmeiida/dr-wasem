@@ -1,23 +1,22 @@
 import { Container } from "@/components/Global/GridContainer"
 import Image from "next/image"
-import Link from "next/link"
 import { TagCalendar } from "../TagCalendar"
 import { SimilarArticles } from "./SimilarArticles"
 
 export function Post() {
   return (
     <>
-      <section className="py-28">
+      <section className="py-14 md:py-28">
         <Container>
           <div className="text-center">
             <div className="mx-auto w-fit">
               <TagCalendar />
             </div>
-            <h2 className="font-nunito text-gray-950 font-semibold mt-14 max-w-[904px] mx-auto">
+            <h2 className="font-nunito text-gray-950 font-semibold mt-8 text-3xl md:text-[40px] md:mt-14 max-w-[904px] mx-auto">
               Medição do soro do neurofilamento e ressonância magnética na
               esclerose múltipla
             </h2>
-            <div className="flex items-center mx-auto w-fit gap-6 mt-12">
+            <div className="flex items-center mx-auto w-fit gap-6 mt-6 md:mt-12">
               <span className="font-inter text-base font-medium text-gray-900">
                 Esclerose Múltipla
               </span>
@@ -28,19 +27,19 @@ export function Post() {
             </div>
           </div>
           <Image
-            className="mt-14"
+            className="mt-14 h-[30vh] object-cover rounded-lg"
             src="/img/image-blog-post.png"
             width={1216}
             height={352}
             alt="Imagem do post do blog"
           />
-          <div className="flex flex-col items-start ml-52">
-            <h4 className="font-nunito font-semibold text-gray-950 mt-24 max-w-[747px]">
+          <div className="flex flex-col items-start ml-0 lg:ml-52">
+            <h4 className="font-nunito font-semibold text-gray-950 mt-14 lg:mt-24 max-w-[747px]">
               Investigadores analisaram a relação temporal entre os níveis
               séricos de neurofilamentos de cadeia leve e a identificação de
               lesões na ressonância magnética com contraste.
             </h4>
-            <div className="space-y-8 mt-6 font-inter text-base leading-6 text-gray-950 opacity-80 max-w-[800px]">
+            <div className="space-y-8 mt-6 font-inter text-base leading-6 text-gray-950 opacity-80 w-full max-w-[100%] lg:max-w-[800px]">
               <p>
                 Em pacientes com esclerose múltipla (EM), acredita-se que um
                 alto nível de neurofilamentos de cadeia leve sérico (sNfL)
@@ -74,7 +73,7 @@ export function Post() {
               <h6 className="font-nunito font-bold text-gray-950">
                 COMENTÁRIO:
               </h6>
-              <p className="font-inter text-base leading-6 text-gray-950 opacity-80 max-w-[800px]">
+              <p className="font-inter text-base leading-6 text-gray-950 opacity-80 w-full max-w-[100%] lg:max-w-[800px]">
                 Embora os níveis de sNfL normalmente aumentassem nas semanas
                 seguintes a uma lesão Gd+, nem todos os pacientes com lesões
                 tiveram elevações de sNfL significativamente aumentadas. A
@@ -84,43 +83,6 @@ export function Post() {
                 fornecer informações adicionais sobre a atividade da doença.
                 Aumentos em sNfL podem estar relacionados à localização e
                 duração das lesões Gd+.
-              </p>
-            </div>
-            <div className="space-y-6 mt-6">
-              <h6 className="font-nunito font-bold text-gray-950">CITAÇÕES:</h6>
-              <p className="font-inter text-base leading-6 text-gray-950 opacity-80 max-w-[800px]">
-                <div className="space-y-6">
-                  <i className="block">
-                    Fox RJ et al. Temporal relationship between serum
-                    neurofilament light chain and radiologic disease activity in
-                    patients with multiple sclerosis. Neurology 2024 May 14;
-                    102:e209357. (https://doi.org/10.1212/WNL.0000000000209357)
-                  </i>
-                  <span className="block">
-                    Tradução: Automática do Google Chrome com Adaptação de
-                    Afonso Freitas Revisão científica: Dr. Matheus Wasem 
-                  </span>
-                </div>
-                <div className="space-y-6 mt-6">
-                  <span className="block">Link do artigo original:</span>
-                  <Link
-                    className="font-inter text-base leading-6 text-blue underline max-w-[800px]"
-                    href={
-                      "https://www.jwatch.org/na57513/2024/06/18/neurofilament-serum-measurement-and-magnetic-resonance"
-                    }
-                  >
-                    https://www.jwatch.org/na57513/2024/06/18/neurofilament-serum-measurement-and-magnetic-resonance
-                  </Link>
-                </div>
-                <div className="mt-6">
-                  <span>Imagem retirada de:</span>
-                  <Link
-                    className="font-inter text-base leading-6 ml-1 text-blue underline max-w-[800px]"
-                    href={"https://www.noticiasensalud.com"}
-                  >
-                    https://www.noticiasensalud.com
-                  </Link>
-                </div>
               </p>
             </div>
           </div>

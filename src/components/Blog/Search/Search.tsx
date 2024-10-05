@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function Search() {
   return (
-    <section className="py-28">
+    <section className="py-14 lg:py-28">
       <Container>
         <div className="text-center space-y-6">
           <h1 className="font-nunito font-bold text-orange">Blog</h1>

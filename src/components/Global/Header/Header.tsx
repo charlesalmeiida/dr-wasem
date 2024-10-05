@@ -10,7 +10,7 @@ export function Header() {
     <header className="py-5 shadow-shadowShape sticky top-0 bg-white z-10">
       <Container>
         <div className="flex justify-between w-full">
-          <div className="flex flex-1 justify-between items-center max-w-3xl">
+          <div className="flex flex-1 justify-between items-center max-w-4xl">
             <Link href="/">
               <Image
                 src="/svg/logo.svg"
@@ -23,6 +23,12 @@ export function Header() {
               <ul className="hidden lg:flex gap-14">
                 <ItemNav className="hover:text-gray-800 text-gray-950">
                   Sobre
+                </ItemNav>
+                <ItemNav className="hover:text-gray-800 text-gray-950">
+                  FAQ
+                </ItemNav>
+                <ItemNav className="hover:text-gray-800 text-gray-950">
+                  Depoimentos
                 </ItemNav>
                 <ItemNav className="hover:text-gray-800 text-gray-950">
                   Blog

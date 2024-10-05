@@ -11,7 +11,7 @@ export default function BlogPage() {
       <Header />
       <Search />
       <CardPostLg />
-      <div className="flex justify-center gap-[84px]">
+      <div className="flex flex-col md:flex-row mx-auto md:mx-0 w-fit md:w-full justify-center gap-[84px]">
         <CardPostMd />
         <CardPostMd />
         <CardPostMd />

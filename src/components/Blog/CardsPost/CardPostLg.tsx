@@ -9,11 +9,11 @@ export function CardPostLg() {
       <Container>
         <Link
           href="/blog/blog-post"
-          className="flex justify-center items-center pb-28 gap-10"
+          className="flex flex-col md:flex-row justify-center items-center pb-14  lg:pb-28 gap-10"
         >
           <div className="overflow-hidden rounded-lg">
             <Image
-              className="hover:scale-105 transition-all max-w-[488px] object-cover"
+              className="hover:scale-105 transition-all max-w-[100%] lg:max-w-[488px] object-cover"
               src="/img/image-post-default.png"
               width={488}
               height={304}
