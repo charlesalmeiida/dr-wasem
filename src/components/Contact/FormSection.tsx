@@ -5,7 +5,7 @@ import { TextArea } from "./TextArea"
 export function FormSection() {
   return (
     <form className="mt-14 space-y-10">
-      <div className="flex gap-8 max-w-[1008px]">
+      <div className="flex flex-col md:flex-row gap-8 max-w-[1008px]">
         <div className="flex-1">
           <Input type="text" id="name" placeholder="Digite seu nomenome">
             Nome
@@ -17,7 +17,7 @@ export function FormSection() {
           </Input>
         </div>
       </div>
-      <div className="flex gap-8 max-w-[1008px]">
+      <div className="flex flex-col md:flex-row gap-8 max-w-[1008px]">
         <div className="flex-1">
           <TextArea />
         </div>
@@ -25,7 +25,7 @@ export function FormSection() {
           <Input type="email" id="email" placeholder="Digite aqui o seu e-mail">
             E-mail
           </Input>
-          <div className="mt-9 flex justify-end">
+          <div className="mt-9 flex justify-start md:justify-end">
             <Button color="primary" size="base" url="/contato">
               Enviar
             </Button>
