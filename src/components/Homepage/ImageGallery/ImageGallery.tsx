@@ -30,7 +30,7 @@ export const ImageGallery = () => {
         <div className="space-y-8">
           <div>
             <Swiper
-              navigation={false}
+              navigation={true}
               spaceBetween={10}
               thumbs={{ swiper: thumbsSwiper }}
               pagination={{ type: "fraction" }}
@@ -40,21 +40,41 @@ export const ImageGallery = () => {
               {images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    className="max-w-[70%] lg:max-w-[500px] mx-auto"
+                    className="max-w-[90%] lg:max-w-[500px] mx-auto"
                     src={image.src}
                     alt="Imagem do doutor"
                     width={697}
                     height={421}
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
-          <div className="max-w-[500px] mx-auto">
+
+          <div className="max-w-[90%] lg:max-w-[500px] mx-auto">
             <Swiper
               onSwiper={setThumbsSwiper}
               spaceBetween={8}
               slidesPerView={3}
+              breakpoints={{
+                640: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 12,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 15,
+                },
+              }}
               freeMode={true}
               watchSlidesProgress={true}
               modules={[FreeMode, Navigation, Thumbs]}
@@ -63,11 +83,15 @@ export const ImageGallery = () => {
               {images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <Image
-                    className="lg:max-w-[150px] max-w-[100px]"
                     src={image.src}
                     alt="Imagem do doutor"
                     width={697}
                     height={421}
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </SwiperSlide>
               ))}

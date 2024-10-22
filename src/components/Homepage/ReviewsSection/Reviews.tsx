@@ -77,12 +77,12 @@ export function Reviews() {
               margin-right: 8px;
               opacity: 0.5;
               border-radius: 0;
-              transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+              transition: all 0.3s ease;
             }
             .custom-pagination .swiper-pagination-bullet-active {
               background-color: #f8f9fa;
               opacity: 1;
-              width: 28px; /* Aumentar a largura do bullet ativo */
+              width: 28px;
             }
           `}</style>
         </div>

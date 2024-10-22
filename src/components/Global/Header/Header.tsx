@@ -28,13 +28,13 @@ export function Header() {
                   Sobre
                 </ItemNav>
                 <ItemNav
-                  link="#faq"
+                  link="/#faq"
                   className="hover:text-gray-800 text-gray-950"
                 >
                   FAQ
                 </ItemNav>
                 <ItemNav
-                  link="#dep"
+                  link="/#dep"
                   className="hover:text-gray-800 text-gray-950"
                 >
                   Depoimentos
@@ -46,7 +46,7 @@ export function Header() {
                   Blog
                 </ItemNav>
                 <ItemNav
-                  link="#localizacao"
+                  link="/#localizacao"
                   className="hover:text-gray-800 text-gray-950"
                 >
                   Localização

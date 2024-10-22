@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Container } from "../GridContainer"
 import { IconsSocial } from "./IconsSocials"
 import { ItemNav } from "../Header/ItemNav"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -68,6 +69,16 @@ export function Footer() {
           </nav>
         </div>
       </Container>
+      <div>
+        <Link href="https://wa.me/5511999999999">
+          <Image
+            src="/svg/logo-whatsapp.svg"
+            width={62}
+            height={40}
+            alt="logo WhatsApp"
+          />
+        </Link>
+      </div>
     </footer>
   )
 }
