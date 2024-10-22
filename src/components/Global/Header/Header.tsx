@@ -21,19 +21,34 @@ export function Header() {
             </Link>
             <nav>
               <ul className="hidden lg:flex gap-14">
-                <ItemNav className="hover:text-gray-800 text-gray-950">
+                <ItemNav
+                  link="#sobre"
+                  className="hover:text-gray-800 text-gray-950"
+                >
                   Sobre
                 </ItemNav>
-                <ItemNav className="hover:text-gray-800 text-gray-950">
+                <ItemNav
+                  link="#faq"
+                  className="hover:text-gray-800 text-gray-950"
+                >
                   FAQ
                 </ItemNav>
-                <ItemNav className="hover:text-gray-800 text-gray-950">
+                <ItemNav
+                  link="#dep"
+                  className="hover:text-gray-800 text-gray-950"
+                >
                   Depoimentos
                 </ItemNav>
-                <ItemNav className="hover:text-gray-800 text-gray-950">
+                <ItemNav
+                  link="/blog"
+                  className="hover:text-gray-800 text-gray-950"
+                >
                   Blog
                 </ItemNav>
-                <ItemNav className="hover:text-gray-800 text-gray-950">
+                <ItemNav
+                  link="#localizacao"
+                  className="hover:text-gray-800 text-gray-950"
+                >
                   Localização
                 </ItemNav>
               </ul>

@@ -22,7 +22,7 @@ export function Reviews() {
   }
 
   return (
-    <section className="py-14 bg-blue">
+    <section className="py-14 bg-blue" id="dep">
       <Container>
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="space-y-6 shrink-0 text-center lg:text-left mb-10">

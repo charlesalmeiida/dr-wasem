@@ -29,9 +29,15 @@ export function MenuMobile() {
       >
         <nav>
           <ul className="text-center space-y-10">
-            <ItemNav className="text-gray-500">Sobre</ItemNav>
-            <ItemNav className="text-gray-500">Blog</ItemNav>
-            <ItemNav className="text-gray-500">Localização</ItemNav>
+            <ItemNav link="#sobre" className="text-gray-500">
+              Sobre
+            </ItemNav>
+            <ItemNav link="/blog" className="text-gray-500">
+              Blog
+            </ItemNav>
+            <ItemNav link="#localizacao" className="text-gray-500">
+              Localização
+            </ItemNav>
           </ul>
         </nav>
         <div className="mx-auto md:hidden w-fit mt-4">

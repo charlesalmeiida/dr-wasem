@@ -1,6 +1,10 @@
 import Image from "next/image"
 
-export function TagCalendar() {
+interface TagCalendarProps {
+  date: string
+}
+
+export function TagCalendar({ date }: TagCalendarProps) {
   return (
     <div className="flex gap-2">
       <Image
@@ -10,7 +14,7 @@ export function TagCalendar() {
         alt="Ícone de calendário"
       />
       <span className="font-inter text-base font-medium text-gray-900">
-        12 fevereiro, 2024
+        {date}
       </span>
     </div>
   )

@@ -46,13 +46,22 @@ export function Footer() {
           </span>
           <nav>
             <ul className="flex items-center gap-14">
-              <ItemNav className="text-gray-500 hover:text-gray-800">
+              <ItemNav
+                link="#sobre"
+                className="text-gray-500 hover:text-gray-800"
+              >
                 Sobre
               </ItemNav>
-              <ItemNav className="text-gray-500 hover:text-gray-800">
+              <ItemNav
+                link="/blog"
+                className="text-gray-500 hover:text-gray-800"
+              >
                 Blog
               </ItemNav>
-              <ItemNav className="text-gray-500 hover:text-gray-800">
+              <ItemNav
+                link="#localizacao"
+                className="text-gray-500 hover:text-gray-800"
+              >
                 Localização
               </ItemNav>
             </ul>

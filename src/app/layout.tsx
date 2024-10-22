@@ -14,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter} ${nunito} antialiased`}>{children}</body>
+      <body
+        style={{ scrollBehavior: "smooth" }}
+        className={`${inter} ${nunito} antialiased scroll-smooth`}
+      >
+        {children}
+      </body>
     </html>
   )
 }

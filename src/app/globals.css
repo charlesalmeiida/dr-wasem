@@ -38,3 +38,7 @@ h6 {
     font-size: 16x;
   }
 }
+
+* {
+    scroll-behavior: smooth;
+}

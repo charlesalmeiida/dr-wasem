@@ -5,7 +5,7 @@ import { TextTag } from "../TextTag"
 
 export function About() {
   return (
-    <section className="py-14 lg:py-32">
+    <section className="py-14 lg:py-32" id="sobre">
       <Container>
         <div className="flex flex-col lg:flex-row items-start justify-around">
           <div className="flex flex-col mx-auto lg:mx-0 items-center">

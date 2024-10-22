@@ -15,7 +15,7 @@ export function Faq() {
   }
 
   return (
-    <section className="pb-28">
+    <section className="pb-28" id="faq">
       <Container>
         <div className="text-center pb-10 lg:pb-28">
           <TextTag className="text-orange">FAQ</TextTag>

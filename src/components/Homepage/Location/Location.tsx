@@ -5,7 +5,7 @@ import { Maps } from "./Maps"
 
 export function Location() {
   return (
-    <section className="pb-14 lg:pb-28">
+    <section className="pb-14 lg:pb-28" id="localizacao">
       <Container>
         <div className="text-center">
           <TextTag className="text-orange">LOCALIZAÇÃO</TextTag>
