@@ -83,7 +83,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               {post.heading}
             </h4>
             <div className="space-y-8 mt-6 font-inter text-base leading-6 text-gray-950 opacity-80 w-full max-w-[100%] lg:max-w-[800px]">
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              <div
+                className="break-words text-wrap"  
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
             </div>
           </div>
         </Container>
