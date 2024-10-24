@@ -1,6 +1,7 @@
 import { Inter, Nunito_Sans } from "next/font/google"
 
 const inter_font = Inter({
+  display: "swap",
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["300", "400", "500"],

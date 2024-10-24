@@ -8,6 +8,7 @@ import { TagCalendar } from "@/components/Blog/TagCalendar"
 import { Container } from "@/components/Global/GridContainer"
 import { Header } from "@/components/Global/Header/Header"
 import { Footer } from "@/components/Global/Footer/Footer"
+import { SimilarArticles } from "@/components/Blog/Post/SimilarArticles"
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY || "")
 
@@ -87,6 +88,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </div>
         </Container>
       </section>
+      <SimilarArticles />
       <Footer />
     </>
   )

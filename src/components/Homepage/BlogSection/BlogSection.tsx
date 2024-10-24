@@ -23,17 +23,17 @@ async function fetchAllPosts() {
 
 export function BlogSection() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const [posts, setPosts] = useState<any[]>([])
+  const [allPosts, setAllPosts] = useState<any[]>([])
 
   useEffect(() => {
     async function getData() {
       const postsData = await fetchAllPosts()
-      setPosts(postsData)
+      setAllPosts(postsData)
     }
     getData()
   }, [])
 
-  if (posts.length === 0) {
+  if (allPosts.length === 0) {
     return <div>Carregando...</div>
   }
 
@@ -56,17 +56,17 @@ export function BlogSection() {
 
         <div className="mt-10 flex flex-col lg:flex-row lg:gap-[104px] gap-14">
           <CardPostDefault
-            imagePrimary={posts[0].data.imagePrimary}
-            theme={posts[0].data.postTheme}
-            title={posts[0].data.title}
-            date={posts[0].data.datePost}
-            slug={posts[0].data.slug}
+            imagePrimary={allPosts[0].data.imagePrimary}
+            theme={allPosts[0].data.postTheme}
+            title={allPosts[0].data.title}
+            date={allPosts[0].data.datePost}
+            slug={allPosts[0].data.slug}
           />
           <div className="flex flex-col mx-auto lg:mx-0 gap-[30px]">
             <h4 className="leading-7 lg:hidden font-nunito text-gray-950 font-semibold">
               Recentes
             </h4>
-            {posts.slice(1).map((post, index) => (
+            {allPosts.slice(1).map((post, index) => (
               <CardPostSM
                 key={index}
                 imagePrimary={post.data.imagePrimary}
