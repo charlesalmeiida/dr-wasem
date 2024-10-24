@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react"
 import { GoogleMap, LoadScript } from "@react-google-maps/api"
 
 const center = {
-  lat: -25.443065643310547,
-  lng: -49.33836364746094,
+  lat: -25.433796842489745,
+  lng: -49.302595461460015,
 }
 
 export const Maps = () => {

@@ -19,14 +19,13 @@ export function Location() {
           </div>
           <div className="max-w-[331px] mt-10 text-center lg:text-left mx-auto space-y-7">
             <h4 className="font-nunito font-semibold text-gray-950">
-              INC Instituto de Neurologia e Cardiologia de Curitiba
+              Dr. Matheus Wasem - Neurologista
             </h4>
             <p className="text-base font-inter text-gray-950">
-              Rua Jeremias Maciel Perretto, 300 - Campo Comprido, Curitiba - PR,
-              81210-310
+              R. Dona Alice Tibiriçá, 765 - Bigorrilho, Curitiba - PR, 80730-320
             </p>
             <span className="block font-nunito font-bold text-lg text-orange">
-              Telefone: (41) 98748-2906
+              Telefone: (41) 99826-2052
             </span>
             <div className="mx-auto lg:mx-0 w-fit">
               <Button url="/contato" color="blue" size="base">
