@@ -67,11 +67,11 @@ export const ImageGallery = () => {
                   spaceBetween: 10,
                 },
                 768: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                   spaceBetween: 12,
                 },
                 1024: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 15,
                 },
               }}

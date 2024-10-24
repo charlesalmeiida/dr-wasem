@@ -69,7 +69,7 @@ export function Footer() {
           </nav>
         </div>
       </Container>
-      <div className="fixed right-10 bottom-10">
+      <div className="fixed z-10 right-5 bottom-5 lg:right-10 lg:bottom-10">
         <Link href="https://wa.me/5511999999999">
           <Image
             src="/svg/logo-whatsapp.svg"
