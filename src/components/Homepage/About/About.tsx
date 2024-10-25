@@ -1,14 +1,69 @@
+"use client"
+
 import Image from "next/image"
 import { Container } from "../../Global/GridContainer"
 import { TagAboutTheDoctor } from "./TagAboutTheDoctor"
 import { TextTag } from "../TextTag"
+import { useEffect, useRef } from "react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all"
 
 export function About() {
+  const textAboutRef = useRef(null)
+  const imageAboutRef = useRef(null)
+
+  useEffect(() => {
+    const textAbout = textAboutRef.current
+    const imageAbout = imageAboutRef.current
+    const tl = gsap.timeline()
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    tl.fromTo(
+      textAbout,
+      {
+        opacity: 0,
+        x: 100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: textAbout,
+          scrub: true,
+          start: "top bottom",
+          end: "center center",
+        },
+      }
+    ).fromTo(
+      imageAbout,
+      {
+        opacity: 0,
+        x: -100,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: imageAbout,
+          scrub: true,
+          start: "top bottom",
+          end: "center center",
+        },
+      }
+    )
+  }, [])
+
   return (
     <section className="py-14 lg:py-32" id="sobre">
       <Container>
         <div className="flex flex-col lg:flex-row items-start justify-around">
-          <div className="flex flex-col mx-auto lg:mx-0 items-center">
+          <div
+            ref={imageAboutRef}
+            className="flex opacity-0 flex-col mx-auto lg:mx-0 items-center"
+          >
             <Image
               className="max-w-[75%] lg:max-w-[100%]"
               src="/img/image-about.png"
@@ -21,7 +76,7 @@ export function About() {
               <TagAboutTheDoctor about="RQE 26.459" />
             </div>
           </div>
-          <div className="mt-10 lg:mt-0 mx-auto lg:mx-0">
+          <div ref={textAboutRef} className="mt-10 opacity-0 lg:mt-0 mx-auto lg:mx-0">
             <TextTag className="text-orange text-center lg:text-left block">
               SOBRE
             </TextTag>
